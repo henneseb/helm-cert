@@ -27,7 +27,7 @@ ingress:
   enabled: true
   secret:
     enabled: true
-  host: plec-demo.dev.numerique-interieur.com
+  host: crtshenne.apps.dso-formation.hp.numerique-interieur.com
 
 resources:
   limits:
@@ -35,7 +35,7 @@ resources:
     cpu: "1"
   requests:
     memory: "512Mi"
-    cpu: "1"
+    cpu: "0.5"
 
 global:
   postgresql:
@@ -70,7 +70,7 @@ postgresql:
         cpu: "1"
       requests:
         memory: "512Mi"
-        cpu: "1"
+        cpu: "0.5"
     volumePermissions:
       enabled: false
       securityContext:
